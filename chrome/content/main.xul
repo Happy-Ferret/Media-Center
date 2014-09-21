@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window id="main" 
+        title="Welcome" 
+        sizemode="maximized"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/javascript" src="chrome://anima-installer/content/main.js"/>
+
+<vbox>
+  <button
+	id="video"
+	class="side"
+	label="Videos"
+	accesskey="v"
+        />
+  <button
+       	id="music"
+       	class="side"
+       	label="Music"
+       	accesskey="m" 
+       	/>
+  <button
+	id="browser"
+	class="side"
+	label="Internet"
+	accesskey="i"
+	/>
+  <button
+	id="printer"
+	class="side"
+	label="Printer Management"
+	accesskey="p"
+	/>
+</vbox>  	  
+
+</window>
