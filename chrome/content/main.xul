@@ -2,15 +2,29 @@
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
-<window id="main" 
-        title="Welcome" 
+<window id="main"  
         sizemode="maximized"
+        hidechrome="true"
+        onload="openpanel()"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-<script type="application/javascript" src="chrome://anima-installer/content/main.js"/>
+<button></button>
 
+<script type="application/javascript" src="chrome://media-center/content/main.js"/>
+
+<panel id="main_panel"
+       flex="1" 
+       type="autocomplete-richlistbox"
+       noautohide="true"
+       noautofocus="false"
+       level="floating"
+       consumeoutsideclicks="false"
+       position="topleft"
+       top="500px"
+       left="500px"
+       backdrag="false">	
 <vbox>
-  <button
+<button
 	id="video"
 	class="side"
 	label="Videos"
@@ -33,7 +47,14 @@
 	class="side"
 	label="Printer Management"
 	accesskey="p"
-	/>
-</vbox>  	  
+	/>    
+</vbox>
+</panel>
 
+<script type="text/javascript"> 
+function openpanel() 
+{ 
+document.getElementById('main_panel').openPopupAtScreen(0, 0, true) 
+} 
+</script> 
 </window>
