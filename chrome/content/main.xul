@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://media-center/content/css/main.css" type="text/css"?>
 
 <window id="main"  
         sizemode="maximized"
